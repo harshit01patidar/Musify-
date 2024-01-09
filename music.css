@@ -1,0 +1,554 @@
+* {
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+.music {
+  background-color: black;
+}
+.navbar-items {
+  display: flex;
+  position: sticky;
+  z-index: 10;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+.navbar-items img {
+  padding-top: 17px;
+  padding-left: 20px;
+}
+li {
+  top: 0;
+  padding: 35px;
+  margin-left: 70px;
+  display: inline-block;
+  font-weight: bolder;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+a:hover {
+  color: rgb(34, 166, 240);
+}
+a:active {
+  color: red;
+}
+input {
+  text-align: center;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.484);
+  border-radius: 10px;
+  color: white;
+  width: 400px;
+  height: 25px;
+}
+h1 {
+  background-color: black;
+  color: white;
+  padding: 45px 0px 15px 110px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2 {
+  background-color: black;
+  color: white;
+  padding: 25px 0px 0px 110px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.music-list {
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: black;
+}
+.playlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.music-box {
+  position: relative;
+  margin: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.413);
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+  /* transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1); */
+}
+.music-box:hover {
+  opacity: 0.3;
+  transform: translateY(-5px);
+}
+.image {
+  height: 250px;
+  width: 250px;
+  cursor: pointer;
+}
+h3,
+.singer-name {
+  color: white;
+  text-align: center;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(3, 3, 3) 0%,
+    rgb(1, 23, 28) 35%,
+    rgb(255, 0, 0) 100%
+  );
+}
+.singers-heading{
+  margin-right: 50px;
+  color: white;
+  font-size: 40px;
+  padding: 30px 0px 30px 83px;
+  text-decoration: underline;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.artists-list {
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+.artist-img{
+  margin: 5px 10px 0px 10px;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.artist-img:hover{
+  opacity: 0.3;
+  /* padding: 8px; */
+  transform: translateY(-10px);
+  
+}
+.artist {
+  border-radius: 50%;
+  padding: 10px;
+}
+.artists-name {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.thankyou{
+  color: white;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 75px;
+  font-size: 50px;
+  padding: 40px 0px 10px 0px;
+  border-bottom: 2px solid white;
+  width: 1300px;
+}
+.icons{
+  /* text-align: center; */
+  margin: 15px 33px 15px 0px;
+}
+.social-icons{
+  margin: 0px 0px 0px 30px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.social-icons:hover{
+  transform: translateY(-5px);
+}
+.allrights{
+  color: white;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+@media screen and (max-width: 550px) {
+  *{
+    background-color: black;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+  .navbar-items{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+  }
+  .navbar-items a img{
+    position: relative;
+    text-align: center;
+    width: 30%;
+  }
+  .navbar-items ul{
+    display: block;
+    flex-direction: column;
+  }
+  ul li{
+    display: block;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 15px 0px 15px 0px ;
+    text-align: center;
+    line-height: -20px;
+
+  }
+  ul li a{
+    text-align: center;
+    left: 0;
+    margin: 0;
+    font-size: 15px;
+  }
+  input{
+    width: 50%;
+  }
+  h1{
+    position: relative;
+    width: 90%;
+    font-size: 120%;
+    left: -65px;
+  }
+  h2{
+    font-size: 100%;
+    position: relative;
+    left: -65px;
+    width: 85.4%;
+  }
+  .playlist{
+    display: flex;
+    position: relative;
+    width: 96%;
+  }
+  .music-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+
+  }
+  .music-box .image{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  h3{
+    font-size: 30%;
+    width: 100%;
+  }
+  .singer-name{
+    position: relative;
+    font-size: 10%;
+    width: 100%;
+  }
+  .singers-heading{
+    font-size: 100%;
+    width: 100%;
+    position: relative;
+    left: -65px;
+  }
+  .artists-list{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 95%;
+    padding: 10px 0px 0px 0px;
+  }
+  .artist-img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+  .artists-name{
+    position: relative;
+    font-size: 60%;
+    left: 10px;
+  }
+  .thankyou{
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+    left: -15%;
+  }
+  .icons{
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  .icons a img{
+    display: flex;
+    position: relative;
+    width: 22%;
+    height: 100%;
+    left: 22%;
+  }
+  .allrights{
+    position: relative;
+    width: 100%;
+    font-size: 80%;
+    padding: 20px 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width:1000px) {
+  *{
+    background-color: black;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+  .navbar-items{
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+  }
+  .navbar-items a img{
+    position: relative;
+    width: 15%;
+    height: -15%;
+    left: 0;
+  }
+  .navbar-items ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  ul li{
+    position: relative;
+    width: 100%;
+    left: -5%;
+    text-align: center;
+  }
+  ul li a{
+    position: relative;
+    /* width: 100%; */
+    font-size: 100%;
+  }
+  input{
+    width: 200%;
+  }
+  h1{
+    position: relative;
+    width: 95.4%;
+    font-size: 200%;
+    left: -65px;
+  }
+  h2{
+    font-size: 150%;
+    position: relative;
+    left: -65px;
+    width: 95.4%;
+  }
+  .playlist{
+    display: flex;
+    position: relative;
+    width: 96%;
+  }
+  .music-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+
+  }
+  .music-box .image{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  h3{
+    font-size: 80%;
+    width: 100%;
+  }
+  .singer-name{
+    position: relative;
+    font-size: 80%;
+    width: 100%;
+  }
+  .singers-heading{
+    font-size: 150%;
+    width: 100%;
+    position: relative;
+    left: -65px;
+  }
+  .artists-list{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 95%;
+    padding: 10px 0px 0px 0px;
+  }
+  .artist-img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+  .artists-name{
+    position: relative;
+    font-size: 100%;
+    left: 10px;
+  }
+  .thankyou{
+    position: relative;
+    width: 100%;
+    font-size: 200%;
+    left: -8%;
+  }
+  .icons{
+    width: 40%;
+    left: 30%;
+    position: relative;
+    display: flex;
+  }
+  .icons a img{
+    display: flex;
+    position: relative;
+    width: 22%;
+    height: 100%;
+  }
+  .allrights{
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width:1500px) {
+    *{
+      background-color: black;
+      margin: 0;
+      top: 0;
+      width: 100%;
+    }
+    .navbar-items{
+      width: 100%;
+      display: flex;
+    }
+    .navbar-items a img{
+      position: relative;
+      width: 45%;
+      left: -15%;
+    }
+    .navbar-items ul{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+    ul li{
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      left: -5%;
+      text-align: center;
+    }
+    ul li a{
+      position: relative;
+      /* width: 100%; */
+      font-size: 100%;
+    }
+    h1{
+      position: relative;
+      width: 95.4%;
+      font-size: 400%;
+      left: -65px;
+    }
+    h2{
+      font-size: 200%;
+      position: relative;
+      left: -65px;
+      width: 95.4%;
+    }
+    .playlist{
+      display: flex;
+      position: relative;
+      width: 96%;
+    }
+    .music-box{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+      width: 100%;
+  
+    }
+    .music-box .image{
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    h3{
+      font-size: 80%;
+      width: 100%;
+    }
+    .singer-name{
+      position: relative;
+      font-size: 80%;
+      width: 100%;
+    }
+    .singers-heading{
+      font-size: 150%;
+      width: 100%;
+      position: relative;
+      left: -65px;
+    }
+    .artists-list{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      width: 95%;
+      padding: 10px 0px 0px 0px;
+    }
+    .artist-img{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+      width: 100%;
+    }
+    .artists-name{
+      position: relative;
+      font-size: 100%;
+      left: 10px;
+    }
+    .thankyou{
+      position: relative;
+      width: 100%;
+      font-size: 300%;
+      left: -5.5%;
+    }
+    .icons{
+      width: 40%;
+      left: 30%;
+      position: relative;
+      display: flex;
+    }
+    .icons a img{
+      display: flex;
+      position: relative;
+      width: 22%;
+      height: 100%;
+    }
+    .allrights{
+      position: relative;
+      width: 100%;
+      font-size: 100%;
+      padding: 20px 0px 0px 0px;
+    }
+}
